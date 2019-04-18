@@ -1,0 +1,35 @@
+meta(charset='utf-8')
+meta(name='viewport', content='width=device-width,initial-scale=1,shrink-to-fit=no')
+meta(name='description', content='')
+title Star Wars
+link(rel='canonical', href='https://getbootstrap.com/docs/4.3/examples/album/')
+// Bootstrap core CSS 
+link(rel='stylesheet' href='/bootstrap/bootstrap.css')
+link(href='/style/style.css', rel='stylesheet')
+
+
+body(id='b1')
+  header
+    .collapse.bg-dark#navbarHeader
+      .container
+        .row
+          .col-sm-8.col-md-7.py-4
+    .navbar.navbar-dark.bg-dark.shadow-sm
+      .container.d-flex.justify-content-between
+        a.navbar-brand.d-flex.align-items-center(href='/')
+          img(src="/img/death-star.svg", alt="ds", style='height: 3rem;')
+          strong Star Wars
+
+  h2 Agregar
+  form(method='POST', action='/agregar')
+    .form-group
+      label Episodio-->
+      input(type='text', name='episodio', placeholder='1-7', autocomplete='off')
+    .form-group
+      label Personaje-->
+      input(type='text', name='personaje', placeholder='', autocomplete='off')
+    input.btn.btn-primary(type='submit', value='Guardar')
+  p
+    strong #{mensaje}
+
+  a.btn.btn-secondary(href='/') Volver

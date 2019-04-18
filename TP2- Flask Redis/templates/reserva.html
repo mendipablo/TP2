@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/second.css') }}">
+    <title>Reserva</title>
+</head>
+<body>
+        <section class="container">
+        <h1>EventoPQS</h1>
+            <div class="row">
+            <article class="card fl-left">
+            <section class="date">
+            <time datetime="">
+            <span>
+                    <script> 
+
+                            var mydate=new Date(); 
+                            var year=mydate.getYear(); 
+                            if (year < 1000) 
+                            year+=1900; 
+                            var day=mydate.getDay(); 
+                            var month=mydate.getMonth()+1; 
+                            if (month<10) 
+                            month="0"+month; 
+                            var daym=mydate.getDate(); 
+                            if (daym<10) 
+                            daym="0"+daym; 
+                            document.write("<small><font color='000000' face='Arial'><b>"+daym+"/"+month+"/"+year+"</b></font></small>") 
+                            
+                            </script> 
+            </span>
+            {{ key }}
+            </time>
+    </section>
+    <section class="card-cont">
+            <small>dj primavera</small>
+            <h3>c del u</h3>
+            <div class="even-date">
+             
+             <time>
+               <span>sábado 21 septiembre 2019</span>
+               <span>17:00pm a 02:00 am</span>
+             </time>
+            </div>
+            <div class="even-info">
+              <i class="fa fa-map-marker"></i>
+              
+              <p> $ {{precio}}</p>
+            </div>
+            
+    <form method="POST" action="http://localhost:5000/compra?k={{key}}">
+        <div class="form-group">
+           
+    </div>
+    <input class="btn btn-primary" type="submit" value="Comprar" onclick="return alert('Seguro?')">
+  </form>
+          </section>
+
+</section>
+     
+  <a class="btn btn-secondary" href="/"> Volver</a>
+
+</body>
+</html>

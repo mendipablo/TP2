@@ -1,0 +1,91 @@
+meta(charset='utf-8')
+meta(name='viewport', content='width=device-width,initial-scale=1,shrink-to-fit=no')
+meta(name='description', content='')
+title Star Wars
+link(rel='canonical', href='https://getbootstrap.com/docs/4.3/examples/album/')
+// Bootstrap core CSS 
+link(rel='stylesheet' href='/bootstrap/bootstrap.css')
+link(href='/style/style.css', rel='stylesheet')
+
+header
+  .collapse.bg-dark#navbarHeader
+    .container
+      .row
+        .col-sm-8.col-md-7.py-4
+  .navbar.navbar-dark.bg-dark.shadow-sm
+    .container.d-flex.justify-content-between
+      a.navbar-brand.d-flex.align-items-center(href='#')
+        img(src="/img/death-star.svg", alt="ds", style='height: 3rem;')
+        strong Star Wars
+          
+main(role='main')
+  section.jumbotron.text-center(style='height:12rem ; background-image: url(/img/sable.jpg)')
+    .container
+      h1.jumbotron-heading EPISODIOS
+      p.lead.text-muted
+        p 
+          a.btn.btn-primary.my-2(href='/personaje') AGREGAR  
+          a.btn.btn-secondary.my-2(href='/del') QUITAR
+         
+
+  .card-deck
+    .card
+      center
+        .card(style='width: 18rem;')
+          img.card-img-top(src='/img/st1.jpg' alt='Card image cap')
+          h4.card-title Episodio 1
+          p.card-text La amenaza fantasma.
+          a.btn.btn-primary(href='/listar?ep=1') Ver
+
+    .card
+      center      
+        .card(style='width: 18rem;')
+          img.card-img-top(src='/img/st2.jpeg', alt='Card image cap')
+          h4.card-title Episodio 2
+          p.card-text El ataque de los clones.
+          a.btn.btn-primary(href='/listar?ep=2') Ver
+    .card
+      center
+        .card(style='width: 18rem;')
+          img.card-img-top(src='img/st3.jpg', alt='Card image cap')
+          h4.card-title Episodio 3
+          p.card-text La venganza de los Sith.
+          a.btn.btn-primary(href='/listar?ep=3') Ver
+  .card-deck
+    .card
+      center
+        .card(style='width: 18rem;')
+          img.card-img-top(src='img/st4.jpg', alt='Card image cap')
+          h4.card-title Episodio 4
+          p.card-text Una nueva esperanza.
+          a.btn.btn-primary(href='/listar?ep=4') Ver
+    .card
+      center
+        .card(style='width: 18rem;')
+          img.card-img-top(src='img/st5.jpg', alt='Card image cap')
+          h4.card-title Episodio 5
+          p.card-text El imperio contraataca.
+          a.btn.btn-primary(href='/listar?ep=5') Ver
+    .card
+      center
+        .card(style='width: 18rem;')
+          img.card-img-top(src='img/st6.jpg', alt='Card image cap')
+          h4.card-title Episodio 6
+          p.card-text El retorno del Jedi.
+          a.btn.btn-primary(href='/listar?ep=6') Ver
+  .card-deck
+    .card
+      center
+        .card(style='width: 18rem;')
+          img.card-img-top(src='img/st7.png', alt='Card image cap')
+          h4.card-title Episodio 7
+          p.card-text El despertar de la fuerza.
+          a.btn.btn-primary(href='/listar?ep=7') Ver
+footer.text-muted
+  .container
+    p.float-right
+      a(href='#') Volver arriba
+    p 
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+script window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+script(src='/docs/4.3/dist/js/bootstrap.bundle.min.js', integrity='sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o', crossorigin='anonymous')

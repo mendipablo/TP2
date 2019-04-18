@@ -1,0 +1,12 @@
+web:
+build: .
+command: sh -c 'npm install; npm start'
+ports:
+- '3000:3000'
+volumes:
+- /home/pablo/api/Project/api:/api
+links:	 - "db:redis"
+  db:
+    image: redis
+    port:
+      -"6379:6379"

@@ -1,0 +1,28 @@
+body{
+    background: url(/img/darth-vader.svg);
+   background-position: 0% 50%;
+  
+
+}
+#b1{
+    background: url(/img/darth-vader.svg) no-repeat fixed;
+    background-position: 50% 50%;
+    
+}
+
+#b2{
+    background: url(/img/bola.png) 850px 50px no-repeat fixed;
+      
+    }
+
+#b3{
+    background: url(/img/desert.jpg);
+
+}    
+#p1{
+    text-shadow: 2px 2px 5px red;
+    text-transform: capitalize;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}

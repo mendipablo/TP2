@@ -1,0 +1,33 @@
+meta(charset='utf-8')
+meta(name='viewport', content='width=device-width,initial-scale=1,shrink-to-fit=no')
+meta(name='description', content='')
+title Star Wars
+link(rel='canonical', href='https://getbootstrap.com/docs/4.3/examples/album/')
+// Bootstrap core CSS 
+link(rel='stylesheet' href='/bootstrap/bootstrap.css')
+link(href='/style/style.css', rel='stylesheet')
+  
+
+
+
+body(id='b3')
+    header
+    .collapse.bg-dark#navbarHeader
+        .container
+        .row
+            .col-sm-8.col-md-7.py-4
+    .navbar.navbar-dark.bg-dark.shadow-sm
+        .container.d-flex.justify-content-between
+        a.navbar-brand.d-flex.align-items-center(href='/')
+            img(src="/img/death-star.svg", alt="ds", style='height: 3rem;')
+            strong Star Wars
+    
+
+center
+    img(src="https://fontmeme.com/permalink/190410/11483e1525109e27a777f0d0b23336f3.png", alt="")
+    .list-group.py-2(style='width: 10rem;')
+        each personaje in lista
+            p.list-group-item(id='p1', style='box-shadow: 10px 10px') #{personaje}
+       
+
+
